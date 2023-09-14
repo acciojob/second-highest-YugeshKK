@@ -10,8 +10,10 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			arr.sort();
-			return arr[arr.length-2];
+			const ans=arr.sort((a, b)=>{
+			    return a-b;
+})
+			return ans;
 		}
 
 		function Main() {
@@ -22,7 +24,7 @@
 			}
 			alert(secondHighest(arr));
 		}
-		Main();
+		// Main();
 	</script>
 
     <script type="text/javascript" src="./script.js">
